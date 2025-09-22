@@ -1,0 +1,29 @@
+https://GitHub.com/~noemi-platform-cap/
+├── contracts/              # Smart contracts (Solidity)
+│   ├── NPC.sol             # NPC token contract (ERC20/ERC721 or hybrid)
+│   └── RewardRouter.sol    # Handles reward routing logic
+│
+├── migrations/             # Truffle/Hardhat scripts to deploy contracts
+│   └── 1_deploy_contracts.js
+│
+├── test/                   # Smart contract tests (Mocha/Chai or Foundry)
+│   └── test_npc.js
+│
+├── src/                    # Frontend or CLI tools
+│   ├── cli/                # Go-based CLI tools
+│   │   ├── main.go         # Command entry point
+│   │   ├── config.yaml     # CLI config
+│   │   └── internal/       # Your tool runner, workflows, guards
+│
+│   └── web/                # Optional: React web frontend
+│       ├── App.jsx
+│       └── components/
+│
+├── wallet/                 # Wallet connection & signing
+│   ├── connect.js          # MetaMask integration (web3.js or ethers.js)
+│   └── signer.js
+│
+├── go.mod                  # Go module file (for CLI tools)
+├── hardhat.config.js       # Or truffle-config.js (Smart contract config)
+├── README.md
+└── .env                    # For private keys, Infura, Alchemy etc. (NEVER commit)
